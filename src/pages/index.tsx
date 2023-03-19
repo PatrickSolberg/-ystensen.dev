@@ -17,7 +17,7 @@ const Home: NextPage = () => {
         </div>
         <div className="left-0 flex flex-wrap gap-2 p-4 items-center">
           <div className="text-center text-xl font-Inter text-neutral-500 inline-flex gap-2 items-center">Contact: 
-            <a href="mailto:patrick.oytsensen@gmail.com" className="hover:text-cyan-300"><EnvelopeClosedIcon className="h-6 w-auto" /></a>
+            <a href="mailto:patrick.oysteinsen@gmail.com" className="hover:text-cyan-300"><EnvelopeClosedIcon className="h-6 w-auto" /></a>
             <a href="https://github.com/PatrickSolberg" className="hover:text-cyan-300"><GitHubLogoIcon className="h-6 w-auto"/> </a>
           </div>
         </div>
