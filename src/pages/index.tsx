@@ -36,18 +36,19 @@ const onMouseOver = (event: React.MouseEvent<HTMLHeadingElement>) => {
 
   interval = setInterval(() => {
     const target = event.target as HTMLHeadingElement;
-    target.textContent = target.textContent
+    const value = target.dataset.value ?? null;
+    target.innerText = target.innerText
       ?.split("")
       .map((letter, index) => {
         if (index < iteration) {
-          return target.dataset.value?.[index];
+          return value?.[index];
         }
 
         return letters[Math.floor(Math.random() * 29)];
       })
       .join("");
 
-    if (iteration >= target.dataset.value?.length) {
+    if (iteration >= (value?.length ?? 0)) {
       clearInterval(interval);
     }
 
